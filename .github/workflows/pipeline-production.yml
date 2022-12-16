@@ -1,0 +1,27 @@
+name: Pipeline Production
+on:
+  workflow_dispatch:
+    inputs:
+      web:
+        type: choice
+        description: Web
+        options: 
+          - admin
+          - seller
+          - buyer
+
+jobs:
+  build:
+    name: Build Preview
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Preview
+        run: echo 'Build Preview'
+
+  publish:
+    name: Publish to Production
+    runs-on: ubuntu-latest
+    environment: 'Production'
+    steps:
+      - name: Publish
+        run: echo 'Publish'
