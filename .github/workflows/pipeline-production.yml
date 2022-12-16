@@ -16,7 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build Preview
-        run: echo 'Build Preview'
+        run: |
+          sleep 30
+          echo 'Build Preview'
 
   publish:
     name: Publish to Production
