@@ -1,5 +1,5 @@
 name: Pipeline Production
-run-name: Build ${{ inputs.web }}
+run-name: Pipeline Production (${{ inputs.web }})
 on:
   workflow_dispatch:
     inputs:
