@@ -17,6 +17,7 @@ concurrency:
 jobs:
   build:
     name: Build Preview
+    run-name: Build ${{ inputs.web }}
     runs-on: ubuntu-latest
     steps:
       - name: Build Preview
