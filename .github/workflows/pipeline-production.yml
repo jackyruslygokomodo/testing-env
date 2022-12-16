@@ -12,7 +12,7 @@ on:
           - buyer
 
 concurrency:
-  group: environment-${{ inputs.web }}
+  group: environment-${{ github.event.inputs.web }}
   cancel-in-progress: true
 
 jobs:
